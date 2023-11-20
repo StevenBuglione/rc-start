@@ -3,6 +3,8 @@ stages:
 
 test_runner_job:
   stage: test
+    tags:
+      - shared
   script:
     - echo "Hello, World!"
     - echo "This is a test job running on the GitLab Runner."
