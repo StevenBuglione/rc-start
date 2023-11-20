@@ -1,0 +1,8 @@
+concurrent = 1
+## This File Should Be Here For MacOS: /Users/Shared/gitlab-runner/config
+## This Is here to show example
+[[runners]]
+  name = "neptune"
+  url = "http://gitlab.jupiter.com"
+  token = "glrt-nQWdehPiBUHqtw_hgWwF"
+  executor = "docker"
