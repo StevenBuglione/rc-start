@@ -1,0 +1,12 @@
+stages:
+  - test
+
+test_runner_job:
+  stage: test
+  script:
+    - echo "Hello, World!"
+    - echo "This is a test job running on the GitLab Runner."
+    - echo "Current directory:"
+    - pwd
+    - echo "List of files in the current directory:"
+    - ls -l
