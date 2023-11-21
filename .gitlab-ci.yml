@@ -9,4 +9,4 @@ deploy:
   script:
     - docker-compose -f docker-compose.yml up -d
   only:
-    - master
+    - main
