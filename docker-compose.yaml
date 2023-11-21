@@ -1,9 +1,9 @@
 version: '3.8'
 services:
-  rc-landing:
+  nginx:
     extends:
       file: ./rc-landing/docker-compose.yaml
-      service: rc-landing
+      service: nginx
 
 
 
