@@ -1,29 +1,9 @@
 version: '3.8'
 services:
-  traefik:
+  rc-landing:
     extends:
-      file: ./rc-gateway/docker-compose.yaml
-      service: traefik
-  zookeeper-1:
-    extends:
-      file: ./rc-broker/docker-compose.yaml
-      service: zookeeper-1
-  zookeeper-2:
-    extends:
-      file: ./rc-broker/docker-compose.yaml
-      service: zookeeper-2
-  kafka-1:
-    extends:
-      file: ./rc-broker/docker-compose.yaml
-      service: kafka-1
-  kafka-2:
-    extends:
-      file: ./rc-broker/docker-compose.yaml
-      service: kafka-2
-  portainer:
-    extends:
-      file: ./rc-portainer/docker-compose.yaml
-      service: portainer
+      file: ./rc-landing/docker-compose.yaml
+      service: rc-landing
 
 
 
