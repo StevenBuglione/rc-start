@@ -1,11 +1,14 @@
 stages:
   - deploy
 
+
 services:
   - docker:dind
 
 deploy:
   stage: deploy
+  tags:
+  - shared
   script:
     - docker-compose -f docker-compose.yml up -d
   only:
