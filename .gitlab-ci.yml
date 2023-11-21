@@ -5,7 +5,7 @@ stages:
 deploy:
   stage: deploy
   tags:
-  - shared
+  - macos
   script:
     - docker-compose -f docker-compose.yml up -d
   only:
